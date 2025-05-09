@@ -1,0 +1,4 @@
+1:user1:dog:german sheperd:Adult:Male:yes:no:no:Big and strong:shawn:charles:shaws1@gmail.com
+2:user2:cat:persian:Young:Male:no:yes:yes:playful and cute:madison:bailey:madbai@gmail.com
+3:kevin:dog:bulldog:Adult:Female:yes:no:yes:looks mad but loves to play with everyone.:kevin:saliba:kevinsaliba8@gmail.com
+4:user3:cat:hairless:Senior:Male:no:no:no:arrogant and independent:garry:harry:harrygarry@gmail.com

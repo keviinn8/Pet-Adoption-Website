@@ -1,0 +1,86 @@
+<body>
+    <div class="middle">
+
+        <div class="container">
+            <nav class="side-menu">
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/create">Create an account</a></li>
+                    <li><a href="/find">Find a Dog/Cat</a></li>
+                    <li><a href="/dogcare">Dog Care</a></li>
+                    <li><a href="/catcare">Cat Care</a></li>
+                    <li><a href="/giveaway">Have a Pet to Give Away</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="find">
+            <form method="get" action="/findPet" onsubmit="return findValidation()">
+                <fieldset>
+                    <legend>
+                        <h3>Find a Dog/Cat</h3>
+                    </legend>
+                    <label>
+                        <input type="radio" name="choice1" value="cat">
+                        Cat
+                    </label>
+                    <label>
+                        <input type="radio" name="choice1" value="dog">
+                        Dog
+                    </label>
+                    <p>
+                        <label>
+                            Specific Breed
+                            <input type="text" name="specificBreed1">
+                        </label>
+                        <label>
+                            <input type="checkbox" name="relevance" value="doesn't matter">
+                            Doesn't Matter
+                        </label>
+                    </p>
+                    <p>
+                        <label>What is your preferred age?</label>
+                        <select name="age" size="1">
+                            <option>Doesn't Matter</option>
+                            <option>Young</option>
+                            <option>Adult</option>
+                            <option>Senior</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>What is your preferred gender?</label>
+                        <select name="gender" size="1">
+                            <option>Doesn't Matter</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="friendlyCat" value="yes">
+                            Needs to get along with other cats.
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="friendlyDog" value="yes">
+                            Needs to get along with other dogs.
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="friendlyChildren" value="yes">
+                            Needs to get along with other children.
+                        </label>
+                    </p>
+                </fieldset>
+                <p>Thank you for taking the time to fill out our survey!</p>
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Clear">
+                <p class="error" id="error1"></p>
+            </form>
+        </div>
+
+    </div>
+    <script src="Q7.js"></script>
+</body>

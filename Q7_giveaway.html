@@ -1,0 +1,106 @@
+
+<body>
+
+    <div class="middle">
+        <div class="container">
+            <nav class="side-menu">
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/create">Create an account</a></li>
+                    <li><a href="/find">Find a Dog/Cat</a></li>
+                    <li><a href="/dogcare">Dog Care</a></li>
+                    <li><a href="/catcare">Cat Care</a></li>
+                    <li><a href="/giveaway">Have a Pet to Give Away</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="giveaway">
+            <form method="post" action="/giveawayPet" onsubmit="return giveawayValidation()">
+            <fieldset>
+                <legend>
+                    <h3>Pet to Give Away</h3>
+                </legend>
+                <label>
+                    <input type="radio" name="choice2" value="cat">
+                    Cat
+                </label>
+                <label>
+                    <input type="radio" name="choice2" value="dog">
+                    Dog
+                </label>
+                <p>
+                    <label>
+                        Specific Breed
+                        <input type="text" name="specificBreed2">
+                    </label>
+                </p>
+                <p>
+                    <label>Age of animal</label>
+                    <select name="age" size="1">
+                        <option>Age</option>
+                        <option>Young</option>
+                        <option>Adult</option>
+                        <option>Senior</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Animal gender</label>
+                    <select name="gender" size="1">
+                        <option>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="friendlyCat" value="yes">
+                        Gets along with other dogs
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="friendlyDog" value="yes">
+                        Gets along with other cats
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="friendlyChildren" value="yes">
+                        Suitable for a family with small children
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Brag about your pet:<br>
+                        <textarea name="brag" rows="5" cols="40" placeholder="Enter a brief description..."></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Owner's First Name
+                        <input type="text" name="firstName">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Owner's Family Name
+                        <input type="text" name="familyName">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Owner's Email
+                        <input type="text" name="email">
+                    </label>
+                </p>
+            </fieldset>
+            <p>Thank you for taking the time to fill out our survey!</p>
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Clear">
+            <p class="error" id="error2"></p>
+            </form>
+        </div>
+    </div>
+    <script src="Q7.js"></script>
+</body>

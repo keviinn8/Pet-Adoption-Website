@@ -1,0 +1,40 @@
+<body>
+    <div class="middle">
+        <div class="container">
+            <nav class="side-menu">
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/create">Create an account</a></li>
+                    <li><a href="/find">Find a Dog/Cat</a></li>
+                    <li><a href="/dogcare">Dog Care</a></li>
+                    <li><a href="/catcare">Cat Care</a></li>
+                    <li><a href="/giveaway">Have a Pet to Give Away</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post" action="/loginAccount">
+                <label>
+                    Username:
+                    <input type="text" name="username" required>
+                </label>
+                <br><br>
+                <label>
+                    Password:
+                    <input type="password" name="password" required>
+                </label>
+                <br><br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <p>
+                <b>Username</b> must be letters and digits only. <br>
+                <b>Password</b> must be at least 4 characters, must contain letters and digits only, and at least one of each.
+            </p>
+        </div>
+    </div>
+    <script src="Q7.js"></script>
+</body>
